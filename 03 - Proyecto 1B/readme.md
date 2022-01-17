@@ -4,10 +4,17 @@
 <h4>2. Base de datos: (Conceptual Data Model):  </h4>  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Base de datos](https://user-images.githubusercontent.com/88899205/149810904-17b51017-2f4d-4eba-983b-224b4266af57.png)
 =======
 ![Base de datos](https://user-images.githubusercontent.com/88899205/149839220-43754b07-3f7b-4c71-9912-a8d38664451f.png)
 
+
+>>>>>>> desarrollo
+=======
+
+
+![Base de datos](https://user-images.githubusercontent.com/88899205/149839220-43754b07-3f7b-4c71-9912-a8d38664451f.png)
 
 >>>>>>> desarrollo
 
