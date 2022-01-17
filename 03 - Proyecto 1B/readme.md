@@ -1,8 +1,10 @@
-<h1>Entrega de Proyecto 1B </h1>
+# Entrega de Proyecto 1B </h1>
 
 <h4> 1. Mockups: </h4> https://www.figma.com/file/0XlZDObmz0eapfdeqzGJMs/Mockups?node-id=0%3A1
-<h4>2. Base de datos: (Conceptual Data Model)  </h4>  
-![Base de datos](https://user-images.githubusercontent.com/88899205/149806629-03319fd1-78af-4645-9f9c-b6037dfd81c7.jpg)
+<h4>2. Base de datos: (Conceptual Data Model):  </h4>  
+![Base de datos](https://user-images.githubusercontent.com/88899205/149808826-bd89cfc7-fa1a-47ce-8622-1cf09cfe812b.jpg)
+
+
 
 
 
