@@ -178,7 +178,7 @@ fun menu(archivo1: Archivo, archivo2: Archivo) {
                             }
                             3 -> {
                                 println("Fecha de compra:")
-                                cambio = validarEntero(2021).toString()
+                                cambio = ingresarDate().toString()
                             }
 
                             4 -> {

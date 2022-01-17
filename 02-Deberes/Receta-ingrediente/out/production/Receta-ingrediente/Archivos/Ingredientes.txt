@@ -7,10 +7,8 @@ Leche condensada |Túrron de coco|Sat Oct 03 00:00:00 ECT 2020|false|5.0
 Aguacate|Crema de aguacate|Thu Nov 25 00:00:00 ECT 2021|true|0.5
 Calabacín|Crema de aguacate|Sun Oct 10 00:00:00 ECT 2021|false|1.25
 Aceite de oliva extra virgen|Crema de aguacate|Thu Sep 02 00:00:00 ECT 2021|true|2.0
-Caldo de pollo|Crema de aguacate|Sun Oct 03 00:00:00 ECT 2021|false|10.0
 fumet de pescado|Sorropotún de bonito|Sun Oct 10 00:00:00 ECT 2021|true|5.0
 Pimiento verde|Sorropotún de bonito|Mon Oct 05 00:00:00 ECT 2020|false|0.25
 Perejil|Sorropotún de bonito|Mon Nov 15 00:00:00 ECT 2021|true|0.2
-Patata|Sorropotún de bonito|Tue Nov 03 00:00:00 ECT 2020|false|0.1
+Patata|Sorropotún de bonito|Mon Oct 12 00:00:00 ECT 2020|false|0.25
 Mozarella|Ensalada caprese de pasta|Sat Oct 03 00:00:00 ECT 2020|false|1.0
-Tomate|Ensalada caprese de pasta|Sun Jan 03 00:00:00 ECT 2021|true|0.25
