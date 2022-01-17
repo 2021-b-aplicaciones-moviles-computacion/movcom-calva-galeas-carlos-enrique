@@ -2,7 +2,7 @@
 
 <h4> 1. Mockups: </h4> https://www.figma.com/file/0XlZDObmz0eapfdeqzGJMs/Mockups?node-id=0%3A1
 <h4>2. Base de datos: (Conceptual Data Model)  </h4>  
-![image](https://user-images.githubusercontent.com/88899205/149805195-752de43b-dce4-4320-9141-457ae2d8c9be.png)
+![Base de datos](https://user-images.githubusercontent.com/88899205/149806629-03319fd1-78af-4645-9f9c-b6037dfd81c7.jpg)
 
 
 
