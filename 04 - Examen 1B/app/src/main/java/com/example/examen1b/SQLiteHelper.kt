@@ -91,12 +91,12 @@ class SQLiteHelper(
         val existeReceta = resultadoConsultaLectura.moveToFirst()
         if (existeReceta) {
             do {
-                val id = resultadoConsultaLectura.getInt(0) //Columna indice 0 -> ID
-                val nombre = resultadoConsultaLectura.getString(1) //Columna indice 1 -> CODIGO
-                val tipoReceta = resultadoConsultaLectura.getString(2) //Columna indice 2 -> NOMBRE
-                val numeroIngredientes = resultadoConsultaLectura.getInt(3) //Columna indice 3 -> CREDITOS
-                val precio = resultadoConsultaLectura.getDouble(4) //Columna indice 4 -> AULA
-                val tiempoPreparacion = (resultadoConsultaLectura.getInt(5))  //C}}
+                val id = resultadoConsultaLectura.getInt(0) 
+                val nombre = resultadoConsultaLectura.getString(1) 
+                val tipoReceta = resultadoConsultaLectura.getString(2) 
+                val numeroIngredientes = resultadoConsultaLectura.getInt(3) 
+                val precio = resultadoConsultaLectura.getDouble(4) 
+                val tiempoPreparacion = (resultadoConsultaLectura.getInt(5))  
 
                 if (nombre != null) {
                     listaReceta.add(Receta(id,nombre, tipoReceta, numeroIngredientes, precio, tiempoPreparacion))
@@ -124,12 +124,12 @@ class SQLiteHelper(
         val RecetaEncontrada = Receta(0, "", "", 0, 0.0, 0)
         if (existeReceta) {
             do {
-                val id = resultadoConsultaLectura.getInt(0) //Columna indice 0 -> ID
-                val nombre = resultadoConsultaLectura.getString(1) //Columna indice 1 -> CODIGO
-                val tipoReceta = resultadoConsultaLectura.getString(2) //Columna indice 2 -> NOMBRE
-                val numeroIngredientes = resultadoConsultaLectura.getInt(3) //Columna indice 3 -> CREDITOS
-                val precio = resultadoConsultaLectura.getDouble(4) //Columna indice 4 -> AULA
-                val tiempoPreparacion = (resultadoConsultaLectura.getInt(5))  //C
+                val id = resultadoConsultaLectura.getInt(0) 
+                val nombre = resultadoConsultaLectura.getString(1)
+                val tipoReceta = resultadoConsultaLectura.getString(2) 
+                val numeroIngredientes = resultadoConsultaLectura.getInt(3) 
+                val precio = resultadoConsultaLectura.getDouble(4) 
+                val tiempoPreparacion = (resultadoConsultaLectura.getInt(5))  
 
 
                 if ( nombre != null) {
@@ -139,7 +139,7 @@ class SQLiteHelper(
                     RecetaEncontrada.numeroIngredientes = numeroIngredientes
                     RecetaEncontrada.precio = precio
                     RecetaEncontrada.tiempoPreparacion = tiempoPreparacion
-                    //arregloUsuario.add(usuarioEncontrado)
+                    
                 }
             } while (resultadoConsultaLectura.moveToNext())
         }
@@ -159,16 +159,16 @@ class SQLiteHelper(
             null
         )
         val existeReceta = resultadoConsultaLectura.moveToFirst()
-        //val arregloUsuario = arrayListOf<EUsuarioBDD>()       //En caso de3 necesitar un arreglo de registros
+        
         val RecetaEncontrada = Receta(0, "", "", 0, 0.0, 0)
         if (existeReceta) {
             do {
-                val id = resultadoConsultaLectura.getInt(0) //Columna indice 0 -> ID
-                val nombre = resultadoConsultaLectura.getString(1) //Columna indice 1 -> CODIGO
-                val tipoReceta = resultadoConsultaLectura.getString(2) //Columna indice 2 -> NOMBRE
-                val numeroIngredientes = resultadoConsultaLectura.getInt(3) //Columna indice 3 -> CREDITOS
-                val precio = resultadoConsultaLectura.getDouble(4) //Columna indice 4 -> AULA
-                val tiempoPreparacion = (resultadoConsultaLectura.getInt(5))  //C
+                val id = resultadoConsultaLectura.getInt(0)
+                val nombre = resultadoConsultaLectura.getString(1) 
+                val tipoReceta = resultadoConsultaLectura.getString(2) 
+                val numeroIngredientes = resultadoConsultaLectura.getInt(3) 
+                val precio = resultadoConsultaLectura.getDouble(4)
+                val tiempoPreparacion = (resultadoConsultaLectura.getInt(5))  
 
                 if (nombre != null) {
                     RecetaEncontrada.id = id
