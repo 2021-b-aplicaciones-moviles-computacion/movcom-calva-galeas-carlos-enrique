@@ -1,0 +1,5 @@
+Túrron de coco|postre|5|10.0|315
+Crema de aguacate|crema|8|5.0|30
+Sorropotún de bonito|sopa|10|20.0|55
+Ensalada caprese de pasta|ensalada|5|5.0|10
+Tortilla|desayuno|3|1.0|15

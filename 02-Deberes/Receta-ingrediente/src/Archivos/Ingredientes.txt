@@ -1,0 +1,15 @@
+Huevo|Tortilla francesa|Fri Nov 12 00:00:00 ECT 2021|true|0.15
+Pimienta negra molida|Tortilla francesa|Wed Oct 20 00:00:00 ECT 2021|false|0.25
+Coco rallado |Túrron de coco|Tue Oct 05 00:00:00 ECT 2021|true|1.0
+Alemndra molida|Túrron de coco|Wed Feb 03 00:00:00 ECT 2021|false|2.0
+Chocolate |Túrron de coco|Fri Dec 03 00:00:00 ECT 2021|true|15.0
+Leche condensada |Túrron de coco|Sat Oct 03 00:00:00 ECT 2020|false|5.0
+Aguacate|Crema de aguacate|Thu Nov 25 00:00:00 ECT 2021|true|0.5
+Calabacín|Crema de aguacate|Sun Oct 10 00:00:00 ECT 2021|false|1.25
+Aceite de oliva extra virgen|Crema de aguacate|Thu Sep 02 00:00:00 ECT 2021|true|2.0
+fumet de pescado|Sorropotún de bonito|Sun Oct 10 00:00:00 ECT 2021|true|5.0
+Pimiento verde|Sorropotún de bonito|Mon Oct 05 00:00:00 ECT 2020|false|0.25
+Perejil|Sorropotún de bonito|Mon Nov 15 00:00:00 ECT 2021|true|0.2
+Patata|Sorropotún de bonito|Mon Oct 12 00:00:00 ECT 2020|false|0.25
+Mozarella|Ensalada caprese de pasta|Sat Oct 03 00:00:00 ECT 2020|false|1.0
+Pimienta negra |Tortilla|Fri Dec 17 00:00:00 ECT 2021|true|0.5
