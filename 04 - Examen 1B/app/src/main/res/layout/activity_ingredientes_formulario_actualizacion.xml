@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.examen1b.IngredientesFormularioActualizacion">
+
+
+    <TextView
+        android:id="@+id/textView5Actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMULARIO DE ACTUALIZACIÓN DE INGREDIENTES"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/edtxtNombreIngredienteActualizar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5Actualizar"
+        app:layout_constraintStart_toStartOf="@+id/textView5Actualizar"
+        app:layout_constraintTop_toBottomOf="@+id/textView5Actualizar" />
+
+    <EditText
+        android:id="@+id/edtxtPrecioUnitarioIngredienteActualizar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Precio Unitario"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtfechaCompraIngredienteActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtfechaCompraIngredienteActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtfechaCompraIngredienteActualizar" />
+
+    <EditText
+        android:id="@+id/edtxtfechaCompraIngredienteActualizar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Fecha de Compra"
+        android:inputType="date"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtCaloriasIngredienteActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtCaloriasIngredienteActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtCaloriasIngredienteActualizar" />
+
+    <EditText
+        android:id="@+id/edtxtIDRecetaIngredienteActualizar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre de la Receta"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtPrecioUnitarioIngredienteActualizar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtPrecioUnitarioIngredienteActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtPrecioUnitarioIngredienteActualizar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInventarioIngredienteActualizar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Inventario  (Si / No)"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtIDRecetaIngredienteActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtIDRecetaIngredienteActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtIDRecetaIngredienteActualizar" />
+
+    <EditText
+        android:id="@+id/edtxtCaloriasIngredienteActualizar"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Calorias"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtNombreIngredienteActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtNombreIngredienteActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtNombreIngredienteActualizar" />
+
+    <Button
+        android:id="@+id/btnActualizarIngrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="ACTUALIZAR"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxInventarioIngredienteActualizar"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxInventarioIngredienteActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxInventarioIngredienteActualizar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

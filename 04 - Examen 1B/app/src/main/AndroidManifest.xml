@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.examen1b">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Examen1B">
+        <activity android:name="com.example.examen1b.IngredientesFormularioActualizacion"></activity>
+        <activity android:name="com.example.examen1b.IngredientesFormularioRegistro" />
+        <activity android:name="com.example.examen1b.RecetasFormularioRegistro" />
+        <activity android:name="com.example.examen1b.RecetasFormularioActualizacion" />
+        <activity android:name="com.example.examen1b.IngredientesActivity" />
+        <activity android:name="com.example.examen1b.RecetasActivity" />
+        <activity android:name="com.example.examen1b.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
