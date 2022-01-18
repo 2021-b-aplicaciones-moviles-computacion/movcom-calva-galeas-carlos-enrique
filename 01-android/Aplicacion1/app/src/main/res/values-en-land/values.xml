@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="color_texto">#FF6200EE</color>
-    <string name="hola_mundo"> Welcome land </string>
-    <color name="color_fondo">   #FF03DAC5 </color>
-
-
-</resources>

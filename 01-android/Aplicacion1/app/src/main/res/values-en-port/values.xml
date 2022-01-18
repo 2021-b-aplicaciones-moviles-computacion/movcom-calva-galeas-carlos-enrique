@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="color_texto">  #00FF00 </color>
-    <string name="hola_mundo"> Welcome port </string>
-    <color name="color_fondo">  #FFFF00 </color>
-
-
-</resources>
