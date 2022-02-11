@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154492340585",
+    "project_id": "b-cecg-moviles",
+    "storage_bucket": "b-cecg-moviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154492340585:android:a537036f0d8a9497f5d5f8",
+        "android_client_info": {
+          "package_name": "com.example.proyectofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154492340585-39kj56h7qum3ch168qe3hdptvr170pcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD48Z7Kkjn02KizTJkg1CIj3Iq4HT5ZypM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154492340585-39kj56h7qum3ch168qe3hdptvr170pcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

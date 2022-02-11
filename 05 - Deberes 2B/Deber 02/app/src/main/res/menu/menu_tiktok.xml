@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_home"
+        android:icon="@drawable/ic_inicio"
+        android:title="Inicio"
+        android:visible="true" />
+    <item
+        android:id="@+id/mnu_buscar"
+        android:icon="@drawable/ic_tendencias"
+        android:title="Tendencias"
+        android:visible="true" />
+    <item
+        android:id="@+id/mnu_grabar"
+        android:icon="@drawable/ic_crear"
+        android:title="Grabar" />
+    <item
+        android:id="@+id/mnu_bandeja"
+        android:icon="@drawable/ic_bandeja"
+        android:title="Bandeja de entrada"
+        android:visible="true" />
+    <item
+        android:id="@+id/mnu_perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil"
+        android:visible="true" />
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/videoTikTok"
+        android:layout_width="408dp"
+        android:layout_height="732dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@color/black" />
+
+    <ImageButton
+        android:id="@+id/icUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/ic_usuario"
+        android:backgroundTint="@color/white"
+        android:foregroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ic_usuario" />
+
+    <ImageButton
+        android:id="@+id/icFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#C30C0C"
+        app:layout_constraintEnd_toEndOf="@+id/icUsuario"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/icUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/icUsuario"
+        app:srcCompat="@drawable/ic_favoritos" />
+
+    <ImageButton
+        android:id="@+id/icComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/icFavoritos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/icFavoritos"
+        app:layout_constraintTop_toBottomOf="@+id/icFavoritos"
+        app:layout_constraintVertical_bias="0.117"
+        app:srcCompat="@drawable/ic_comentarios" />
+
+    <ImageButton
+        android:id="@+id/icCompartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/icComentarios"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/icComentarios"
+        app:layout_constraintTop_toBottomOf="@+id/icComentarios"
+        app:srcCompat="@drawable/ic_compartir" />
+
+    <ImageButton
+        android:id="@+id/icMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/icCompartir"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/icCompartir"
+        app:layout_constraintTop_toBottomOf="@+id/icCompartir"
+        app:srcCompat="@drawable/ic_musica" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="usuario1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <TextView
+        android:id="@+id/txtHashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="#fpy #parati "
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <TextView
+        android:id="@+id/txtMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="♫ sonido original - fabru_blacutt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtHashtag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtHashtag"
+        app:layout_constraintTop_toBottomOf="@+id/txtHashtag" />
+
+    <TextView
+        android:id="@+id/txtCompartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/icCompartir"
+        app:layout_constraintStart_toStartOf="@+id/icCompartir"
+        app:layout_constraintTop_toBottomOf="@+id/icCompartir" />
+
+    <TextView
+        android:id="@+id/txtComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/icComentarios"
+        app:layout_constraintStart_toStartOf="@+id/icComentarios"
+        app:layout_constraintTop_toBottomOf="@+id/icComentarios" />
+
+    <TextView
+        android:id="@+id/txtFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.2k"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/icFavoritos"
+        app:layout_constraintStart_toStartOf="@+id/icFavoritos"
+        app:layout_constraintTop_toBottomOf="@+id/icFavoritos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
