@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.proyecto2b">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EZ FOOD"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login">
+
+
+
+        <activity
+            android:name="com.example.proyecto2b.ui.adaptadores.AdaptadorRecetaBusqueda"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.example.proyecto2b.DetalleReceta"
+            android:exported="true"
+            android:label="Detalle Receta"/>
+        <activity
+            android:name="com.example.proyecto2b.videoYoutube2"
+            android:exported="true" />
+        <activity
+            android:name="com.example.proyecto2b.RegistrarsePor"
+            android:exported="true" />
+        <activity
+            android:name="com.example.proyecto2b.Registrarse"
+            android:exported="true" />
+        <activity
+            android:name="com.example.proyecto2b.Navigation"
+            android:exported="true"
+            android:label="@string/title_activity_navigation" />
+        <activity
+            android:name="com.example.proyecto2b.IniciarSesion"
+            android:exported="true" />
+        <activity
+            android:name="com.example.proyecto2b.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

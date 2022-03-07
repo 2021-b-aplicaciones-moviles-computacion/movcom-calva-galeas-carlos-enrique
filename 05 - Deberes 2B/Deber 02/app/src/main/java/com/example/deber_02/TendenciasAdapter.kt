@@ -12,11 +12,11 @@ import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 import org.imaginativeworld.whynotimagecarousel.utils.setImage
 
 
-class TendenciasActivity(
+class TendenciasAdapter(
     private val context: MainActivity,
     private val listaTendencias: List<Tendencias>,
     private val recyclerView: RecyclerView
-):RecyclerView.Adapter<TendenciasActivity.MyViewHolder>() {
+):RecyclerView.Adapter<TendenciasAdapter.MyViewHolder>() {
     inner class  MyViewHolder(view: View,viewType: Int ): RecyclerView.ViewHolder(view){
 
         val list = mutableListOf<CarouselItem>()
@@ -112,7 +112,7 @@ class TendenciasActivity(
             holder.list.add(CarouselItem(imageUrl = "https://www.muycomputer.com/wp-content/uploads/2020/12/Top-100-TikTok-2020-e1606995460894.jpg"))
             holder.carouselPrincipal.addData(holder.list)
 
-            Log.i("onBindViewHolder","Es LA Pos${holder.view_Type}")
+            Log.i("onBindViewHolder","Es la Pos${holder.view_Type}")
 
         }
         if(holder.view_Type == 0){
@@ -129,7 +129,7 @@ class TendenciasActivity(
             holder.image4.setImage(CarouselItem("https://depor.com/resizer/xjZkkZ00UVgoIihf7A7KyAbUJYY=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6NJOCIEVWZAY3M7FMBWJZX5Z6E.jpg"))
             holder.image5.setImage(CarouselItem("https://www.mdzol.com/u/fotografias/m/2021/7/10/f608x342-1080203_1109926_0.jpeg"))
             holder.image6.setImage(CarouselItem("https://cdn.andro4all.com/files/2020/12/Los-videos-mas-vistos-de-TikTok-de-2020-son-virales.jpg"))
-            Log.i("onBindViewHolder","Es LA Pos${holder.view_Type}")
+            Log.i("onBindViewHolder","Es la Pos${holder.view_Type}")
         }
 
     }

@@ -13,9 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deber_02">
-        <activity android:name=".BandejaActivity"
+        <activity android:name=".BandejaAdapter"
             tools:ignore="Instantiatable"></activity>
-        <activity android:name=".TendenciasActivity"
+        <activity android:name=".TendenciasAdapter"
             tools:ignore="Instantiatable" />
         <activity android:name=".MainActivity"
             android:exported="true">

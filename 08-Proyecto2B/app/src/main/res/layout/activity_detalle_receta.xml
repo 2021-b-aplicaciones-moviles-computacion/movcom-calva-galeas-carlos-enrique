@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetalleReceta">
+
+
+    <ScrollView
+        android:id="@+id/bac"
+        android:layout_width="461dp"
+        android:layout_height="711dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="168dp">
+
+                <TextView
+                    android:id="@+id/dpTvNombreReceta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Empana da de Matambre"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="191dp"
+                    android:layout_height="43dp"
+                    android:backgroundTint="@color/green_ezfood"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:text="Añadir a mi lista"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:icon="@drawable/ic_baseline_mas_24"
+                    app:iconTint="#FFFFFF"
+                    tools:layout_editor_absoluteX="254dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dpivportada"
+                    android:layout_width="386dp"
+                    android:layout_height="207dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/receta_video" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:layout_marginTop="76dp"
+
+
+                    android:backgroundTint="#2F817C7C"
+
+                    android:clickable="true"
+                    app:backgroundTint="#00FFFFFF"
+                    app:fabCustomSize="83dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.588"
+                    app:maxImageSize="90dp"
+                    app:rippleColor="#00C33333"
+                    app:srcCompat="@drawable/ic_baseline_play"
+                    app:tint="@android:color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="447dp"
+                android:layout_height="277dp"
+                android:background="@color/white">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/daIvImagen"
+                    android:layout_width="119dp"
+                    android:layout_height="181dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.578"
+                    app:srcCompat="@drawable/empanadas_de_matambre" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:text="Descripcion"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toEndOf="@+id/daIvImagen"
+                    tools:layout_editor_absoluteY="112dp" />
+
+                <TextView
+                    android:id="@+id/dpTvDescripcion"
+                    android:layout_width="215dp"
+                    android:layout_height="81dp"
+                    android:layout_marginTop="12dp"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/textView14"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dpRvCategoria"
+                    android:layout_width="255dp"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="56dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/dpTvAutor"
+                    android:layout_width="53dp"
+                    android:layout_height="21dp"
+                    android:text="Autor"
+                    android:textColor="@color/black"
+                    tools:layout_editor_absoluteX="171dp"
+                    tools:layout_editor_absoluteY="77dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="450dp"
+                android:layout_height="89dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="39dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="16dp"
+                    android:text="/10"
+                    android:textColor="#A4A4A4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:tint="@color/blue_ezfood"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:srcCompat="@drawable/ic_baseline_star_rate_24" />
+
+                <TextView
+                    android:id="@+id/dpTvCalificacion"
+                    android:layout_width="35dp"
+                    android:layout_height="28dp"
+                    android:text="TextView"
+                    android:textColor="@color/blue_ezfood"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toStartOf="@+id/textView6"
+                    app:layout_constraintHorizontal_bias="0.658"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView6"
+                    app:layout_constraintVertical_bias="0.444" />
+
+                <TextView
+                    android:id="@+id/dpTvTiempoPreparacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de preparacion"
+                    android:textColor="@color/black"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="58dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Ingredientes"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/dpTvIngredientes"
+                android:layout_width="444dp"
+                android:layout_height="132dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

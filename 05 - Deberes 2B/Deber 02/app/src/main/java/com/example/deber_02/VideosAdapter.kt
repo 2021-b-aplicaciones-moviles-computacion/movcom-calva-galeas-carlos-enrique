@@ -9,35 +9,35 @@ import androidx.recyclerview.widget.RecyclerView
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 import org.imaginativeworld.whynotimagecarousel.utils.setImage
 
-class BandejaActivity(
+class VideosAdapter(
     private val context: MainActivity,
-    private val listaBandeja: List<Bandeja>,
-    private val recyclerView: RecyclerView,
-): RecyclerView.Adapter<BandejaActivity.MyViewHolder>() {
+    private val videos: List<Videos>,
+    private val recyclerView: RecyclerView
+): RecyclerView.Adapter<VideosAdapter.MyViewHolder>(){
     inner class  MyViewHolder(view: View): RecyclerView.ViewHolder(view){
-        val list = mutableListOf<CarouselItem>()
-        var usuario: TextView
-        var descripcion: TextView
-        var icPerfil: ImageView
 
-
+        var enlace = ""
+        var video: ImageView
+        var user: TextView
+        var hash: TextView
+        var music: TextView
         init {
 
-
-            usuario = view.findViewById(R.id.tituloTextView)
-            descripcion = view.findViewById(R.id.descritiotextView)
-            icPerfil = view.findViewById(R.id.IcPerfil)
-
+            video = view.findViewById(R.id.videoTikTok)
+            user = view.findViewById(R.id.txtUsuario)
+            hash = view.findViewById(R.id.txtHashtag)
+            music = view.findViewById(R.id.txtMusica)
 
         }
 
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater
             .from(parent.context)
             .inflate(
-                R.layout.item_bandeja_view, //Definimos la vista de nuestro recyvler
+                R.layout.activity_videos, //Definimos la vista de nuestro recyvler
                 parent,
                 false
             )
@@ -45,15 +45,16 @@ class BandejaActivity(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val vid = listaBandeja[position]
-        holder.usuario.text = vid.usuario
-        holder.descripcion.text = vid.descripcion
-        holder.icPerfil.setImage(CarouselItem("https://i.pinimg.com/474x/d0/f2/4f/d0f24f66588ea096daaeff1d31dc4314.jpg"))
+        val vid = videos[position]
+        holder.enlace = vid.enlace.toString()
+        holder.video.setImage(CarouselItem(holder.enlace))
+        holder.user.text = vid.usuario
+        holder.hash.text = vid.hashtag
+        holder.music.text = vid.musica
 
     }
 
     override fun getItemCount(): Int {
-        return listaBandeja.size
+       return videos.size
     }
-
 }

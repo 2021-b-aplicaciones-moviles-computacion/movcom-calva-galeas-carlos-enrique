@@ -187,7 +187,7 @@ class MainActivity : AppCompatActivity() {
         actividad: MainActivity,
         recyclerView: RecyclerView
     ){
-        val adaptador = VideosActivity(
+        val adaptador = VideosAdapter(
             actividad,
             lista,
             recyclerView
@@ -203,7 +203,7 @@ class MainActivity : AppCompatActivity() {
         actividad: MainActivity,
         recyclerView: RecyclerView
     ){
-        val adaptador = TendenciasActivity(
+        val adaptador = TendenciasAdapter(
             actividad,
             lista,
             recyclerView
@@ -219,7 +219,7 @@ class MainActivity : AppCompatActivity() {
         actividad: MainActivity,
         recyclerView: RecyclerView
     ){
-        val adaptador = BandejaActivity(
+        val adaptador = BandejaAdapter(
             actividad,
             lista,
             recyclerView

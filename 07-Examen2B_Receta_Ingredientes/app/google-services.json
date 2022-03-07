@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659242566703",
+    "project_id": "b-cecg-examen2b",
+    "storage_bucket": "b-cecg-examen2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659242566703:android:7325fdc5769aa6755232da",
+        "android_client_info": {
+          "package_name": "com.example.examen2b_receta_ingredientes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659242566703-d8bche15n4i5i3q5ce809pbtfpdk2c5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQFq0KLqjgZgL_Pk7uZ32p7i_DzMmQFjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659242566703-d8bche15n4i5i3q5ce809pbtfpdk2c5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

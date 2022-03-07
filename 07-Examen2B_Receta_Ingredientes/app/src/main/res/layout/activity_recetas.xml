@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecetasActivity">
+
+    <TextView
+        android:id="@+id/textRecetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Recetas"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListaRecetas"
+        android:layout_width="375dp"
+        android:layout_height="456dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/textRecetas"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textRecetas"
+        app:layout_constraintTop_toBottomOf="@+id/textRecetas" />
+
+    <Button
+        android:id="@+id/btnInsertarRecetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="CREAR"
+        app:layout_constraintBottom_toTopOf="@+id/rvListaRecetas"
+        app:layout_constraintEnd_toEndOf="@+id/rvListaRecetas"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="@+id/rvListaRecetas" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
