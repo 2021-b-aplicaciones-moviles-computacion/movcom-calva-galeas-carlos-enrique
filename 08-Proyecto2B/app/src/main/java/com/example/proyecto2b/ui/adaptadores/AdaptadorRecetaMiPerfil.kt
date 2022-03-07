@@ -39,7 +39,7 @@ class AdaptadorRecetaMiPerfil(private var lista: ArrayList<RecetaFirebase>, val 
 
         init {
             imagen = vista.findViewById(R.id.bpimagen)
-            calificacion = vista.findViewById(R.id.bptvcalificacion)
+            calificacion = vista.findViewById(R.id.btcalificacion)
             nombre = vista.findViewById(R.id.bptvNombreReceta)
             descripcion = vista.findViewById(R.id.tvDescripcion)
             autor = vista.findViewById(R.id.tvAutor)
@@ -65,9 +65,9 @@ class AdaptadorRecetaMiPerfil(private var lista: ArrayList<RecetaFirebase>, val 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val pelicula = lista[position]
+        val receta = lista[position]
         val storage = Firebase.storage
-        var imagenRef = storage.getReferenceFromUrl(pelicula.imagenReceta.toString())
+        var imagenRef = storage.getReferenceFromUrl(receta.imagenReceta.toString())
 
 
         Glide.with(contexto)
@@ -77,18 +77,18 @@ class AdaptadorRecetaMiPerfil(private var lista: ArrayList<RecetaFirebase>, val 
 
 
 
-        holder.calificacion.text = pelicula.calificacion.toString()
-        holder.nombre.text = pelicula.nombre
-        holder.descripcion.text = pelicula.descripcion
-        holder.autor.text = pelicula.autor
-        holder.duracion.text = pelicula.tiempoPreparacion
+        holder.calificacion.text = receta.calificacion.toString()
+        holder.nombre.text = receta.nombre
+        holder.descripcion.text = receta.descripcion
+        holder.autor.text = receta.autor
+        holder.duracion.text = receta.tiempoPreparacion.toString()
 
         //////Imagen
         holder.imagen.setOnClickListener {
             contexto.startActivity(
                 Intent(contexto, DetalleReceta::class.java).putExtra(
                     "pel",
-                    pelicula
+                    receta
                 )
             )
 
@@ -98,7 +98,7 @@ class AdaptadorRecetaMiPerfil(private var lista: ArrayList<RecetaFirebase>, val 
             val instanciaAuth = FirebaseAuth.getInstance()
             val usuarioLocal = instanciaAuth.currentUser
             val db = Firebase.firestore
-            Log.i("ayuda","${pelicula.uidReceta}")
+            Log.i("ayuda","${receta.uidReceta}")
             val referencia = db
                 .collection("usuario").document(usuarioLocal!!.email.toString())
 

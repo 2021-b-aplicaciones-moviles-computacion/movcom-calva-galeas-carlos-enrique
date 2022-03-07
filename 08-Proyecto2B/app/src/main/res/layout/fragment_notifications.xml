@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="48dp"
-        android:backgroundTint="@color/blue_ezfood"
+        android:backgroundTint="@color/orange_ezfood"
         android:outlineSpotShadowColor="@color/white"
         android:text="Salir"
         android:textColor="@color/white"

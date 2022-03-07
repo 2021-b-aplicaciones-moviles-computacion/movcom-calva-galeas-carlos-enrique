@@ -19,6 +19,7 @@
         android:layout_width="122dp"
         android:layout_height="90dp"
         app:layout_constraintEnd_toEndOf="@+id/elpIvReceta"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/elpIvReceta"
         app:layout_constraintTop_toTopOf="@+id/elpIvReceta"
         app:srcCompat="@drawable/gradient_bg" />
@@ -31,7 +32,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="sans-serif-black"
         android:text="TextView"
-        android:textColor="@color/blue_ezfood"
+        android:textColor="@color/orange_ezfood"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,5 +47,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_calificacion"
         app:srcCompat="@drawable/ic_baseline_star_rate_24"
-        app:tint="@color/blue_ezfood" />
+        app:tint="@color/orange_ezfood" />
 </androidx.constraintlayout.widget.ConstraintLayout>

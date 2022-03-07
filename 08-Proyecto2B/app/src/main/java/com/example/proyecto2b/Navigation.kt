@@ -2,14 +2,13 @@ package com.example.proyecto2b
 
 import android.os.Bundle
 import android.util.Log
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.proyecto2b.R
 import com.example.proyecto2b.databinding.ActivityNavigationBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.FirebaseFirestore
 
 enum class ProviderType{
@@ -31,7 +30,7 @@ class Navigation : AppCompatActivity() {
         val provider2  = bundle?.getString("provider")
         val db  = FirebaseFirestore.getInstance()
 
-        val peliculaAGuardar = hashMapOf<String,Any?>()
+        val RecetaGuardar = hashMapOf<String,Any?>()
 
         val referencia = db.collection("usuario").document(correo.toString())
         referencia
@@ -45,7 +44,7 @@ class Navigation : AppCompatActivity() {
                         .set(
                             hashMapOf(
                                 "correo" to correo.toString(),
-                                "recetas" to peliculaAGuardar
+                                "recetas" to RecetaGuardar
 
                             )
                         )
@@ -57,7 +56,7 @@ class Navigation : AppCompatActivity() {
                         .set(
                             hashMapOf(
                                 "correo" to correo.toString(),
-                                "recetas" to peliculaAGuardar
+                                "recetas" to RecetaGuardar
                             )
                         )
                 }                }

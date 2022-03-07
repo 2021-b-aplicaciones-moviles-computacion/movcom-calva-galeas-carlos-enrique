@@ -83,7 +83,7 @@ class NotificationsFragment : Fragment() {
                                 value["descripcion"].toString(),
                                 value["calificacion"].toString().toDouble(),
                                 null,
-                                value["tiempoPreparacion"].toString(),
+                                value["tiempoPreparacion"].toString().toInt(),
                                 value["nombre"].toString(),
                                 value["imagen"].toString(),
                                 null,

@@ -28,7 +28,7 @@ class AdaptadorMiPerfil(private var lista: ArrayList<Receta>, val contexto: Cont
 
         init {
             imagen = vista.findViewById(R.id.bpimagen)
-            calificacion = vista.findViewById(R.id.bptvcalificacion)
+            calificacion = vista.findViewById(R.id.btcalificacion)
             nombre = vista.findViewById(R.id.bptvNombreReceta)
             descripcion = vista.findViewById(R.id.tvDescripcion)
             autor =  vista.findViewById(R.id.tvAutor)

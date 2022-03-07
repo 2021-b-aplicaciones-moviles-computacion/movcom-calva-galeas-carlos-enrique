@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
 
-        <item name="colorPrimaryVariant"> @color/blue_ezfood </item>
+        <item name="colorPrimaryVariant"> @color/orange_ezfood </item>
 
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->

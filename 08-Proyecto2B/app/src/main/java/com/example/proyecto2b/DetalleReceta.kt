@@ -1,16 +1,15 @@
 package com.example.proyecto2b
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.proyecto2b.R
 import com.example.proyecto2b.ui.adaptadores.AdaptadorCategoria
 import com.example.proyecto2b.ui.clases.Categoria
 import com.example.proyecto2b.ui.clases.RecetaFirebase
@@ -37,9 +36,9 @@ class DetalleReceta : AppCompatActivity() {
             .load(imagenRefPortada)
             .into(imagen)
         val db = Firebase.firestore
-        val peliculasInicio = db.collection("Receta").document(Receta.uidReceta.toString())
+        val RecetasInicio = db.collection("Receta").document(Receta.uidReceta.toString())
         Log.e("help1","uid: ${Receta.uidReceta.toString()}")
-        peliculasInicio
+        RecetasInicio
             .get()
             .addOnSuccessListener {
                 Receta.IdYouTube=it["IdYouTube"].toString()
@@ -75,7 +74,7 @@ class DetalleReceta : AppCompatActivity() {
                 var descripcion = findViewById<TextView>(R.id.dpTvDescripcion)
                 descripcion.setText(Receta.descripcion)
                 var tiempoPreparacion = findViewById<TextView>(R.id.dpTvTiempoPreparacion)
-                tiempoPreparacion.setText(Receta.tiempoPreparacion)
+                tiempoPreparacion.setText(Receta.tiempoPreparacion.toString())
                 var ingredientes = findViewById<TextView>(R.id.dpTvIngredientes)
                 ingredientes.setText(Receta.ingredientes)
                 var calificacion = findViewById<TextView>(R.id.dpTvCalificacion)
@@ -108,7 +107,7 @@ class DetalleReceta : AppCompatActivity() {
                 "uidReceta" to Receta.uidReceta.toString()
             )
 
-            val peliculaAGuardar = hashMapOf<String,HashMap<String,String>>(
+            val RecetaGuardar = hashMapOf<String,HashMap<String,String>>(
                 Receta.uidReceta.toString() to atributos
             )
 
@@ -137,7 +136,7 @@ class DetalleReceta : AppCompatActivity() {
                                     hashRecetas.put(Receta.uidReceta.toString(), atributos)
                                     transaction.update(referencia, "recetas", hashRecetas)
                                 } else {
-                                    transaction.update(referencia, "recetas", peliculaAGuardar)
+                                    transaction.update(referencia, "recetas", RecetaGuardar)
                                 }
 
                             }

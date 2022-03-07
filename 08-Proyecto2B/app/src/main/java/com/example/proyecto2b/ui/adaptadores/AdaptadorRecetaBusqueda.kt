@@ -1,5 +1,6 @@
 package com.example.proyecto2b.ui.adaptadores
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.util.Log
@@ -18,7 +19,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import android.annotation.SuppressLint
 
 
 class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val contexto: Context) : RecyclerView.Adapter<AdaptadorRecetaBusqueda.ViewHolder>() {
@@ -40,7 +40,7 @@ class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val 
 
         init {
             imagen = vista.findViewById(R.id.bpimagen)
-            calificacion = vista.findViewById(R.id.bptvcalificacion)
+            calificacion = vista.findViewById(R.id.btcalificacion)
             nombre = vista.findViewById(R.id.bptvNombreReceta)
             descripcion = vista.findViewById(R.id.tvDescripcion)
             autor =  vista.findViewById(R.id.tvAutor)
@@ -55,7 +55,7 @@ class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val 
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.itembusquedapelicula,parent,false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.itembusquedareceta,parent,false)
         return ViewHolder(itemView)
     }
 
@@ -83,7 +83,7 @@ class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val 
         holder.nombre.text = receta.nombre
         holder.descripcion.text = receta.descripcion
         holder.autor.text = receta.autor
-        holder.tiempoPreparacion.text = receta.tiempoPreparacion
+        holder.tiempoPreparacion.text = receta.tiempoPreparacion.toString()
 
         //////Imagen
         holder.imagen.setOnClickListener{
@@ -108,7 +108,7 @@ class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val 
             )
 
 
-            val peliculaAGuardar = hashMapOf<String,HashMap<String,String>>(
+            val recetaGuardar = hashMapOf<String,HashMap<String,String>>(
                 receta.uidReceta.toString() to atributos
             )
 
@@ -137,7 +137,7 @@ class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val 
                         hashRecetas.put(receta.uidReceta.toString(), atributos)
                         transaction.update(referencia, "recetas", hashRecetas)
                     }else{
-                        transaction.update(referencia, "recetas", peliculaAGuardar)
+                        transaction.update(referencia, "recetas", recetaGuardar)
                     }
 
                 }
@@ -161,13 +161,13 @@ class AdaptadorRecetaBusqueda(private var lista: ArrayList<RecetaFirebase>, val 
                         db
                             .runTransaction { transaction ->
                                 val documentoActual = transaction.get(referencia)
-                                val hashPeliculas = documentoActual.get("recetas" +
+                                val hashRecetas = documentoActual.get("recetas" +
                                         "") as HashMap<String,Any>
-                                Log.i("transaccion", "hash: ${hashPeliculas}")
+                                Log.i("transaccion", "hash: ${hashRecetas}")
 
-                                if(hashPeliculas != {}){
-                                    hashPeliculas.put(receta.uidReceta.toString(), atributos)
-                                    transaction.update(referencia, "recetas", hashPeliculas)
+                                if(hashRecetas != {}){
+                                    hashRecetas.put(receta.uidReceta.toString(), atributos)
+                                    transaction.update(referencia, "recetas", hashRecetas)
                                 }else{
                                     transaction.update(referencia, "recetas", RecetasGuardar)
                                 }

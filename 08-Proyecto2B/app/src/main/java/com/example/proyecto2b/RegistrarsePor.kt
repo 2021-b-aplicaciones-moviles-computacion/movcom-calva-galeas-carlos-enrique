@@ -1,11 +1,10 @@
 package com.example.proyecto2b
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
-import com.example.proyecto2b.R
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -19,7 +18,7 @@ class RegistrarsePor : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarse_por)
 
-        val botonCrear = findViewById<Button>(R.id.aiccrearCuenta)
+        val botonCrear = findViewById<Button>(R.id.aicCrearCuenta2)
         botonCrear.setOnClickListener {
             abrirActividad(Registrarse::class.java)
         }

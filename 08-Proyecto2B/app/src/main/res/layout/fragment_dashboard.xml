@@ -30,7 +30,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fdrvbusquedapeliculas"
+        android:id="@+id/fdrvbusquedarecetas"
         android:layout_width="387dp"
         android:layout_height="500dp"
         app:layout_constraintEnd_toEndOf="parent"

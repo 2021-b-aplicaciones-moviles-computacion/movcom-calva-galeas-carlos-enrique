@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto2b.R
 import com.example.proyecto2b.ui.clases.Slide
 
-class ViewPagerAdapter2 (
+class AdaptadorSlide (
     val mList: List<Slide>, Context: Context
-): RecyclerView.Adapter<ViewPagerAdapter2.ViewPagerViewHolder>(){
+): RecyclerView.Adapter<AdaptadorSlide.ViewPagerViewHolder>(){
     inner class ViewPagerViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {

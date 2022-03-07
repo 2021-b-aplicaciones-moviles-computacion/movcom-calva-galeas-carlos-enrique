@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/gris1"
         app:itemIconTint="@drawable/tab_color"
-        app:itemTextColor="@color/blue_ezfood"
+        app:itemTextColor="@color/orange_ezfood"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteX="175dp" />
 
     <TextView
-        android:id="@+id/bptvcalificacion"
+        android:id="@+id/btcalificacion"
         android:layout_width="28dp"
         android:layout_height="22dp"
         android:text="TextView"
@@ -44,7 +44,7 @@
         android:layout_marginStart="8dp"
         android:text="/10"
         android:textColor="#A4A4A4"
-        app:layout_constraintStart_toEndOf="@+id/bptvcalificacion"
+        app:layout_constraintStart_toEndOf="@+id/btcalificacion"
         tools:layout_editor_absoluteY="42dp" />
 
     <ImageView

@@ -10,18 +10,37 @@
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14375" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable-v24/ic_notifications_black_24dp.xml" value="0.14375" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.14739583333333334" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable/ic_baseline_mas_24.xml" value="0.14739583333333334" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.14375" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.14375" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14375" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.14375" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_detalle_pelicula.xml" value="0.22" />
-        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_detalle_receta.xml" value="0.15" />
-        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_detalle_receta.xml" value="0.18" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_navigation.xml" value="0.2" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_registrarse.xml" value="0.18" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_registrarse_por.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/activity_video_youtube2.xml" value="0.15" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/busquedaReceta.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/busqueda_receta.xml" value="0.22" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/busquedapelicula.xml" value="0.13125" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/elemento_lista_pelicula.xml" value="0.10099637681159421" />
-        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/fragment_dashboard.xml" value="0.10326086956521739" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/fragment_dashboard.xml" value="0.18" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/fragment_home.xml" value="0.15" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/fragment_notifications.xml" value="0.15" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/item_categorias.xml" value="0.13125" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/item_mi_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/item_mi_perfil_lista.xml" value="0.22" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/item_persona.xml" value="0.22" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/item_receta.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/itembusquedapelicula.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/itembusquedareceta.xml" value="0.25" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/layout/slide_item.xml" value="0.1" />
         <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/CARLOS/Desktop/Moviles/movcom-calva-galeas-carlos-enrique/08-Proyecto2B/app/src/main/res/menu/menu.xml" value="0.13125" />
       </map>
     </option>
   </component>

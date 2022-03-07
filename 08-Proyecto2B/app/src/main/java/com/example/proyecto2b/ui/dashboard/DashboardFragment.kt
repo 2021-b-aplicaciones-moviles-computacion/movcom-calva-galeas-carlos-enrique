@@ -2,7 +2,9 @@ package com.example.proyecto2b.ui.dashboard
 
 import android.os.Bundle
 import android.util.Log
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -14,7 +16,6 @@ import com.example.proyecto2b.ui.adaptadores.AdaptadorRecetaBusqueda
 import com.example.proyecto2b.ui.clases.RecetaFirebase
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import kotlin.collections.ArrayList
 
 class DashboardFragment : Fragment() {
 
@@ -40,15 +41,14 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        ////Peliculas
+
         val context = container!!.context
-        var recyclerReceta = root.findViewById<RecyclerView>(R.id.fdrvbusquedapeliculas)
+        var recyclerReceta = root.findViewById<RecyclerView>(R.id.fdrvbusquedarecetas)
 
 
         recyclerReceta.layoutManager = LinearLayoutManager(context)
         // recycler.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
 
-        var listaPeliculas = ArrayList<RecetaFirebase>()
 
         val db = Firebase.firestore
         val recetasInicio = db.collection("Receta")
@@ -64,7 +64,7 @@ class DashboardFragment : Fragment() {
                             receta["descripcion"].toString(),
                             receta["calificacion"].toString().toDouble(),
                             null,
-                            receta["tiempoPreparacion"].toString(),
+                            receta["tiempoPreparacion"].toString().toInt(),
                             receta["nombre"].toString(),
                             receta["imagen"].toString(),
                             null,
@@ -105,7 +105,7 @@ class DashboardFragment : Fragment() {
                                     receta["descripcion"].toString(),
                                     receta["calificacion"].toString().toDouble(),
                                     null,
-                                    receta["tiempoPreparacion"].toString(),
+                                    receta["tiempoPreparacion"].toString().toInt(),
                                     receta["nombre"].toString(),
                                     receta["imagen"].toString(),
                                     null,

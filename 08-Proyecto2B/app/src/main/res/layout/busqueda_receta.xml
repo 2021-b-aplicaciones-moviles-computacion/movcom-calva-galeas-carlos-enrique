@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/empanadas_de_matambre" />
 
     <TextView
-        android:id="@+id/bptvtitulo"
+        android:id="@+id/bttitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -27,17 +27,16 @@
         app:layout_constraintVertical_bias="0.106" />
 
     <TextView
-        android:id="@+id/bptvcalificacion"
+        android:id="@+id/btcalificacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="TextView"
         android:textColor="@color/verde"
-        app:layout_constraintEnd_toEndOf="@+id/bptvtitulo"
+        app:layout_constraintEnd_toEndOf="@+id/bttitulo"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bptvtitulo"
-        app:layout_constraintTop_toBottomOf="@+id/bptvtitulo" />
-
+        app:layout_constraintStart_toStartOf="@+id/bttitulo"
+        app:layout_constraintTop_toBottomOf="@+id/bttitulo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
         tools:layout_editor_absoluteY="346dp" />
 
     <Button
-        android:id="@+id/aiccrearCuenta"
+        android:id="@+id/aicIniciarSesion"
         android:layout_width="222dp"
         android:layout_height="65dp"
         android:backgroundTint="#55AE57"

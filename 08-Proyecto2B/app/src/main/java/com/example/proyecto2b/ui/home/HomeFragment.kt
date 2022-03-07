@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto2b.R
 import com.example.proyecto2b.databinding.FragmentHomeBinding
 import com.example.proyecto2b.ui.adaptadores.AdaptadorReceta
-import com.example.proyecto2b.ui.adaptadores.ViewPagerAdapter2
+import com.example.proyecto2b.ui.adaptadores.AdaptadorSlide
 import com.example.proyecto2b.ui.clases.Receta
 import com.example.proyecto2b.ui.clases.RecetaFirebase
 import com.example.proyecto2b.ui.clases.Slide
@@ -49,7 +49,7 @@ class HomeFragment : Fragment() {
         recyclerSlider.layoutManager = LinearLayoutManager(context,
             LinearLayoutManager.HORIZONTAL, false)
         // recycler.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
-        recyclerSlider.adapter = ViewPagerAdapter2(generarSlider(),context)
+        recyclerSlider.adapter = AdaptadorSlide(generarSlider(),context)
 
         //Recetas
 
@@ -64,7 +64,7 @@ class HomeFragment : Fragment() {
             LinearLayoutManager.HORIZONTAL, false)
         recyclerReceta3.layoutManager = LinearLayoutManager(context,
             LinearLayoutManager.HORIZONTAL, false)
-        // recycler.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
+
 
         var listaRecetas = ArrayList<RecetaFirebase>()
 
@@ -82,7 +82,7 @@ class HomeFragment : Fragment() {
                             receta["descripcion"].toString(),
                             receta["calificacion"].toString().toDouble(),
                             null,
-                            receta["tiempPreparacion"].toString(),
+                            receta["tiempPreparacion"].toString().toInt(),
                             receta["nombre"].toString(),
                             receta["imagen"].toString(),
                           null,
@@ -158,7 +158,7 @@ class HomeFragment : Fragment() {
                 R.drawable.receta_video_batidofresa,
                 "Batido de fresa",
                 "8.6",
-                "Batido de fresa , facil y rapido de preparar",
+                "rBatido de fresa , facil y rapido de prepara",
                 "1 Taza Frutillas Bien lavadas\n" +
                         "2 Unidades Durazno En Almíbar\n" +
                         "2 Cucharadas Azúcar\n" +
